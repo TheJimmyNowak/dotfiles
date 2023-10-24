@@ -12,4 +12,4 @@ alias ce "chezmoi edit"
 alias r "ranger"
 
 set -U fish_greeting
-set -Ux EDITOR nvim
+set -gx EDITOR nvim
