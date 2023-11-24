@@ -201,7 +201,7 @@ for_window [class="^.*"] border pixel 1
 client.focused #aaaaaa #111111 #ffffff #c000cc #060d13
 
 # Setup wallpaper
-exec_always --no-startup-id wal -i $HOME/Pictures/wallpaper/21.webp
+exec_always --no-startup-id wal -i $HOME/Pictures/wallpapers/
 # Run picom
 exec_always --no-startup-id picom -b
 
