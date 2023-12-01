@@ -196,16 +196,21 @@ for_window [class="^.*"] border pixel 1
 # ab3044
 # 091b27
 # 060d13
-# 
+
+
+for_window [class="clock"] floating enable
+for_window [class="clock"] resize set 500 200
+for_window [class="clock"] move left 600px move up 400px
 
 client.focused #aaaaaa #111111 #ffffff #c000cc #060d13
 
 # Setup wallpaper
 exec_always --no-startup-id wal -i $HOME/Pictures/wallpapers/
+
+exec_always  ./start.sh
 # Run picom
 exec_always --no-startup-id picom -b
-
 # Run polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
+# Kill redshift and rerun it
 exec_always --no-startup-id pgrep -x redshift || redshift 
